@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Dropbox Cache</title>
+    </head>
+
+      <script type='text/javascript' src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+    <body>
+      <form id="form" action="/storage" method="POST" enctype="multipart/form-data">
+        Upload File:
+          <input name="file" type="file" id="fileToLoad">
+          <input type="submit" id="uploadSdubmit">
+      </form>
+      <form id="formDownload" action="/download" method="GET" encType="multipart/form-data">
+            <div class="form-group">
+                <label> Download File:
+                    <input type='text' id="donwloadName" name="downloadFilename" class="form-control" placeholder="Please File Name Here"/>
+                </label>
+                <input type="submit" id="donwloadSubmit">
+            </div>
+      </form>
+    </body>
+
+    <script type='text/javascript' src="fs.js"></script>
+</html>
